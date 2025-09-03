@@ -20,6 +20,10 @@ POSTGRES_HOST=db
 POSTGRES_PORT=5432
 ```
 
+## To begin with, activate the virtual environment, for example, in this way.
+
+**`File -> Settings -> Project -> Python Interpreter -> Add Interpreter -> Add Local Interpreter`** 
+
 ## 🛠 Using Docker
 
 ### 🚀 1. Build and Start All Containers
