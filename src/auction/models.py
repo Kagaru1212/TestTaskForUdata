@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, Numeric, DateTime, Enum, ForeignKey, func
 from sqlalchemy.orm import relationship
 
-from auction.enums import LotStatus
-from database import Base
+from src.auction.enums import LotStatus
+from src.database import Base
 
 class Lot(Base):
     __tablename__ = "lots"

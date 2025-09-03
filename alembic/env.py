@@ -1,16 +1,17 @@
 import sys
 from logging.config import fileConfig
+from pathlib import Path
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
 
-import pathlib
-sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent / "src"))
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-from database import Base
-import auction.models
+
+from src.database import Base
+from src.auction import models
 
 config = context.config
 
