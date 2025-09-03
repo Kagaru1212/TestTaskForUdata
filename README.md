@@ -31,3 +31,17 @@ docker-compose build --no-cache
 ```bash
 docker-compose up
 ```
+
+# Attention
+
+## If you are unable to launch the project due to an error
+
+```
+exec ./entrypoint.sh: no such file or directory
+```
+
+## Then you need to open the file *`entrypoint.sh`* and change its line ending format to LF!
+
+- Right here
+
+![img.png](img.png)
